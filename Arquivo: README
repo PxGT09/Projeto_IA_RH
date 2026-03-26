@@ -1,0 +1,31 @@
+# 🤖 NormaIA: Triagem Inteligente de Currículos com IA & Compliance
+
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![Gemini](https://img.shields.io/badge/IA-Google%20Gemini-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+O **NormaIA** é um ecossistema de automação para RH que utiliza Inteligência Artificial Generativa para gerir processos seletivos de ponta a ponta. O projeto foi desenhado para unir a eficiência da tecnologia com o rigor técnico da **Segurança do Trabalho (SST)** e a conformidade jurídica do **Direito (LGPD)**.
+
+## 🚀 Funcionalidades Principais
+
+- **📥 Automação de E-mail:** Monitoramento automático de caixas de entrada para captura de currículos em anexo (PDF).
+- **🧠 Análise Semântica (Gemini API):** Diferente de filtros comuns, a IA entende o contexto (ex: identifica que um certificado de NR-35 habilita o candidato para "Trabalho em Altura").
+- **🛡️ Privacy by Design:** Camada de anonimização via Regex que oculta dados sensíveis (CPF, documentos) antes do processamento pela IA.
+- **📊 Dashboard Interativo:** Interface intuitiva em **Streamlit** para o recrutador configurar vagas e visualizar o ranking de candidatos.
+- **🗄️ Persistência de Dados:** Armazenamento estruturado em **SQLite** para auditoria e histórico de seleções.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem:** Python 3.x
+- **IA:** Google Generative AI (Gemini 1.5 Flash)
+- **Interface:** Streamlit
+- **Banco de Dados:** SQLite
+- **Extração de Dados:** Pdfplumber & Re (Regex)
+- **Integração:** Imaplib & Email
+
+## 📋 Pré-requisitos
+
+Antes de começar, você precisará das seguintes bibliotecas:
+
+```bash
+pip install streamlit google-generativeai pdfplumber pandas gspread oauth2client
